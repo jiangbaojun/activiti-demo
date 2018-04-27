@@ -15,9 +15,9 @@ public class CRUDDemo {
 	public void crud() {
 		try {
 //			query();
-			findTask();
+//			findTask();
 //			findHistoryTask();
-//			delete();
+			delete();
 //			deleteInstance();
 //			deleteDeployment();
 		} catch (Exception e) {
@@ -71,6 +71,9 @@ public class CRUDDemo {
 	public void findTask(){  
 		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
 		String assignee = "李四";
+		
+		
+		
         List<Task> list = processEngine.getTaskService()// 与正在执行的认为管理相关的Service
                 .createTaskQuery()// 创建任务查询对象
                 .taskAssignee(assignee)// 指定个人认为查询，指定办理人
@@ -92,7 +95,7 @@ public class CRUDDemo {
 	public void delete(){  
 		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
 	    //部署对象ID  
-	    String deploymentId = "30001";  
+	    String deploymentId = "20001";  
 	    processEngine.getRepositoryService()//获取流程定义和部署对象相关的Service  
 	        .deleteDeployment(deploymentId,true);  
 	      

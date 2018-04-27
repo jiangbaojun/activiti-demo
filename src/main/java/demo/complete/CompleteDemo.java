@@ -18,7 +18,7 @@ public class CompleteDemo {
 	
 	public void complete() {
 		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
-		String taskId = "2504";  
+		String taskId = "10002";  
 		processEngine.getTaskService().complete(taskId);  
 		System.out.println("完成任务：任务ID:" + taskId);  
 	}

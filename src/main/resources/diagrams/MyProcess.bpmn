@@ -3,46 +3,46 @@
   <process id="MyProcess" name="MyProcess" isExecutable="true">
     <startEvent id="startevent1" name="Start"></startEvent>
     <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="usertask4"></sequenceFlow>
-    <endEvent id="endevent1" name="End"></endEvent>
     <userTask id="usertask4" name="请假单" activiti:assignee="张三"></userTask>
     <userTask id="usertask5" name="经理审批" activiti:assignee="李四"></userTask>
     <sequenceFlow id="flow5" sourceRef="usertask4" targetRef="usertask5"></sequenceFlow>
     <userTask id="usertask6" name="主管确认" activiti:assignee="王五"></userTask>
     <sequenceFlow id="flow6" sourceRef="usertask5" targetRef="usertask6"></sequenceFlow>
+    <endEvent id="endevent1" name="End"></endEvent>
     <sequenceFlow id="flow7" sourceRef="usertask6" targetRef="endevent1"></sequenceFlow>
   </process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_MyProcess">
     <bpmndi:BPMNPlane bpmnElement="MyProcess" id="BPMNPlane_MyProcess">
       <bpmndi:BPMNShape bpmnElement="startevent1" id="BPMNShape_startevent1">
-        <omgdc:Bounds height="35.0" width="35.0" x="108.0" y="110.0"></omgdc:Bounds>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
-        <omgdc:Bounds height="35.0" width="35.0" x="746.0" y="110.0"></omgdc:Bounds>
+        <omgdc:Bounds height="35.0" width="35.0" x="82.0" y="150.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="usertask4" id="BPMNShape_usertask4">
-        <omgdc:Bounds height="55.0" width="105.0" x="236.0" y="100.0"></omgdc:Bounds>
+        <omgdc:Bounds height="55.0" width="105.0" x="210.0" y="140.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="usertask5" id="BPMNShape_usertask5">
-        <omgdc:Bounds height="55.0" width="105.0" x="386.0" y="100.0"></omgdc:Bounds>
+        <omgdc:Bounds height="55.0" width="105.0" x="360.0" y="140.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="usertask6" id="BPMNShape_usertask6">
-        <omgdc:Bounds height="55.0" width="105.0" x="536.0" y="100.0"></omgdc:Bounds>
+        <omgdc:Bounds height="55.0" width="105.0" x="510.0" y="140.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="660.0" y="150.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
-        <omgdi:waypoint x="143.0" y="127.0"></omgdi:waypoint>
-        <omgdi:waypoint x="236.0" y="127.0"></omgdi:waypoint>
+        <omgdi:waypoint x="117.0" y="167.0"></omgdi:waypoint>
+        <omgdi:waypoint x="210.0" y="167.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow5" id="BPMNEdge_flow5">
-        <omgdi:waypoint x="341.0" y="127.0"></omgdi:waypoint>
-        <omgdi:waypoint x="386.0" y="127.0"></omgdi:waypoint>
+        <omgdi:waypoint x="315.0" y="167.0"></omgdi:waypoint>
+        <omgdi:waypoint x="360.0" y="167.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow6" id="BPMNEdge_flow6">
-        <omgdi:waypoint x="491.0" y="127.0"></omgdi:waypoint>
-        <omgdi:waypoint x="536.0" y="127.0"></omgdi:waypoint>
+        <omgdi:waypoint x="465.0" y="167.0"></omgdi:waypoint>
+        <omgdi:waypoint x="510.0" y="167.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow7" id="BPMNEdge_flow7">
-        <omgdi:waypoint x="641.0" y="127.0"></omgdi:waypoint>
-        <omgdi:waypoint x="746.0" y="127.0"></omgdi:waypoint>
+        <omgdi:waypoint x="615.0" y="167.0"></omgdi:waypoint>
+        <omgdi:waypoint x="660.0" y="167.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

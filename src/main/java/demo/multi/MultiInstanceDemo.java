@@ -18,8 +18,8 @@ public class MultiInstanceDemo {
 	
 	@Test
 	public void multi() {
-		deployAndStart();
-//		completeTask();
+//		deployAndStart();
+		completeTask();
 		
 	}
 	
@@ -63,13 +63,11 @@ public class MultiInstanceDemo {
 	
 	public void completeTask(){  
 	    //任务ID  
-	    String taskId = "75017";  
+	    String taskId = "25022";  
 	    //完成任务的同时，设置流程变量，让流程变量判断连线该如何执行  
 	    Map<String, Object> variables = new HashMap<String, Object>();  
-	    //其中message对应sequenceFlow.bpmn中的${message=='不重要'}，不重要对应流程变量的值  
-	    //如果没有符合的条件，流程会结束在当前任务。能不能没有符合条件，不允许完成任务？？？
 	    variables.put("message", "重要");  
-	    processEngine.getTaskService()//  
+	    processEngine.getTaskService()
 	                    .complete(taskId,variables);  
 	    System.out.println("完成任务："+taskId);  
 	}  

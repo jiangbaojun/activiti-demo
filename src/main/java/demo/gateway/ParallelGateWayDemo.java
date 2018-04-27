@@ -16,9 +16,9 @@ public class ParallelGateWayDemo {
 	
 	@Test
 	public void crud() {
-//		deployAndStart();
+		deployAndStart();
 //		findPersonalTaskList();
-		completeTask();
+//		completeTask();
 		
 	}
 	

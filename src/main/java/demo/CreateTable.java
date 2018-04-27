@@ -34,7 +34,7 @@ public class CreateTable {
 	    // 链接数据的配置
 	    processEngineConfiguration.setJdbcDriver("com.mysql.jdbc.Driver");
 	    processEngineConfiguration
-	            .setJdbcUrl("jdbc:mysql://localhost:3306/activiti6?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8");
+	            .setJdbcUrl("jdbc:mysql://localhost:3306/activiti?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8");
 	    processEngineConfiguration.setJdbcUsername("root");
 	    processEngineConfiguration.setJdbcPassword("123456");
 	 

@@ -16,8 +16,8 @@ public class VariableDemo {
 	@Test
 	public void crud() {
 //		setProcessVariables();
-//		getProcessVariables();
-		getHistoryProcessVariables();
+		getProcessVariables();
+//		getHistoryProcessVariables();
 	}
 	
 	public void setProcessVariables(){  

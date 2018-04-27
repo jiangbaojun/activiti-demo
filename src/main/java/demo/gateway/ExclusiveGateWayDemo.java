@@ -16,9 +16,9 @@ public class ExclusiveGateWayDemo {
 	
 	@Test
 	public void crud() {
-		deployAndStart();
+//		deployAndStart();
 //		findPersonalTaskList();
-//		completeTask();
+		completeTask();
 		
 	}
 	
@@ -67,7 +67,7 @@ public class ExclusiveGateWayDemo {
 	
 	public void completeTask(){  
 	    //任务ID  
-	    String taskId = "20004";  
+	    String taskId = "15008";  
 	    //完成任务的同时，设置流程变量，让流程变量判断连线该如何执行  
 	    Map<String, Object> variables = new HashMap<String, Object>();  
 	    //其中message对应sequenceFlow.bpmn中的${message=='不重要'}，不重要对应流程变量的值  
